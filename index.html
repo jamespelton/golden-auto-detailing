@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golden Auto Detailing in Lincoln, Nebraska - Professional car detailing services with a 4.8-star rating. Expert interior & exterior detailing, ceramic coating, paint correction, and more. Call (402) 875-1369 for a free estimate.">
+    <title>Golden Auto Detailing | Professional Car Detailing in Lincoln, NE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+
+        /* Header Styles */
+        header {
+            background: #1a3a5c;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #f5a623;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #f5a623;
+        }
+
+        .cta-button {
+            background: #f5a623;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .cta-button:hover {
+            background: #e09612;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(245, 166, 35, 0.3);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a3a5c 0%, #2d5a82 100%);
+            color: white;
+            padding: 5rem 1.5rem 4rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #e8f0f7;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-cta .cta-button {
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .cta-secondary:hover {
+            background: white;
+            color: #1a3a5c;
+            transform: translateY(-2px);
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .trust-badge::before {
+            content: "✓";
+            background: #f5a623;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: #1a3a5c;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #f5a623, #e09612);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: #1a3a5c;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: #f8f9fb;
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .reason-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            transition: all 0.3s ease;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .reason-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .reason-card h3 {
+            font-size: 1.3rem;
+            color: #1a3a5c;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reason-card p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .owner-name {
+            font-style: italic;
+            color: #1a3a5c;
+            font-weight: 600;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background: #f8f9fb;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            position: relative;
+        }
+
+        .stars {
+            color: #f5a623;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: #1a3a5c;
+        }
+
+        .review-source {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* How It Works */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #f5a623, #e09612);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+
+        .step h3 {
+            font-size: 1.2rem;
+            color: #1a3a5c;
+            margin-bottom: 0.5rem;
+        }
+
+        .step p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: #f8f9fb;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .faq-item h3 {
+            font-size: 1.15rem;
+            color: #1a3a5c;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .faq-item p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #1a3a5c 0%, #2d5a82 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-header h2 {
+            color: white;
+        }
+
+        .contact .section-header p {
+            color: #e8f0f7;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+            align-items: start;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a3a5c;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f5a623;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+        }
+
+        .info-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-item p {
+            color: #e8f0f7;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .info-item a {
+            color: #f5a623;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-item a:hover {
+            color: #e09612;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 300px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f2438;
+            color: white;
+            padding: 3rem 1.5rem 1.5rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #f5a623;
+            font-size: 1.2rem;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #b8c5d6;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .footer-section a:hover {
+            color: #f5a623;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #b8c5d6;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a3a5c;
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav a {
+                padding: 0.75rem;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .trust-badges {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .services-grid,
+            .reasons-grid,
+            .reviews-grid,
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Golden <span>Auto Detailing</span></a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+                <a href="tel:4028751369" class="cta-button">Call Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Premium Auto Detailing in Lincoln, Nebraska</h1>
+            <p>Trusted by Lincoln drivers for professional car detailing that makes your vehicle look showroom-new</p>
+            <div class="hero-cta">
+                <a href="tel:4028751369" class="cta-button">Call Now: (402) 875-1369</a>
+                <a href="#contact" class="cta-button cta-secondary">Request Service</a>
+            </div>
+            <div class="trust-badges">
+                <div class="trust-badge">Serving Lincoln for years</div>
+                <div class="trust-badge">4.8-star rating from 189+ reviews</div>
+                <div class="trust-badge">Professional, reliable service</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-header">
+            <h2>Professional Auto Detailing Services in Lincoln</h2>
+            <p>We offer a complete range of detailing services to keep your vehicle looking its absolute best</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🧼</div>
+                <h3>Full Interior Detailing</h3>
+                <p>Deep cleaning of your entire interior including seats, carpets, dashboard, and all surfaces. We remove stains, eliminate odors, and restore that fresh car feeling.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>Full Exterior Detailing</h3>
+                <p>Complete exterior wash, clay bar treatment, polish, and wax to protect your paint and bring back that brilliant shine. Your car will turn heads on every street.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Paint Correction & Polishing</h3>
+                <p>Remove swirl marks, scratches, and oxidation to restore your vehicle's original paint depth and clarity. Perfect for bringing older cars back to life.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛡️</div>
+                <h3>Ceramic Coating Protection</h3>
+                <p>Long-lasting protection that shields your paint from the elements. Ceramic coating provides incredible gloss and makes washing easier for years to come.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💡</div>
+                <h3>Headlight Restoration</h3>
+                <p>Restore cloudy, yellowed headlights to crystal clarity. Improve your nighttime visibility and the overall appearance of your vehicle.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Engine Bay Cleaning</h3>
+                <p>A clean engine bay not only looks great but also makes it easier to spot potential issues. We safely clean and dress your engine compartment.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🪑</div>
+                <h3>Leather Conditioning & Treatment</h3>
+                <p>Keep your leather seats soft, supple, and protected from cracking. Our conditioning treatments restore and preserve your leather interior.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <h3>Complete Detail Packages</h3>
+                <p>Get the ultimate transformation with our comprehensive packages that combine interior and exterior detailing for maximum value and results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="section-header">
+            <h2>Why Choose Golden Auto Detailing?</h2>
+            <p>What sets us apart from other detailing services in Lincoln</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-icon">🔍</div>
+                <h3>Attention to Detail</h3>
+                <p>We treat every vehicle like our own, paying careful attention to even the smallest details. You'll notice the difference in the quality of our work.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">👨‍🔧</div>
+                <h3>Experienced Professionals</h3>
+                <p>With years of experience bringing out the best in every car, we know exactly how to handle your vehicle with the care it deserves.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">🌟</div>
+                <h3>Quality Products</h3>
+                <p>We use only premium products and proven techniques that deliver lasting results. Your investment in detailing will last far beyond the day we finish.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">😊</div>
+                <h3>Customer Satisfaction</h3>
+                <p>Our 4.8-star rating from 189+ reviews speaks for itself. We don't just meet expectations—we exceed them every single time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-header">
+            <h2>About Golden Auto Detailing</h2>
+        </div>
+        <div class="about-content">
+            <p>Golden Auto Detailing is a family-owned business right here in Lincoln, Nebraska. We started this business because we genuinely love cars and take pride in making them look their absolute best.</p>
+            <p>Over the years, we've built strong relationships with our customers by delivering consistent, high-quality work. We understand that your vehicle is an important investment, and we treat it with the respect and care it deserves.</p>
+            <p>What drives us every day is seeing the smile on a customer's face when they see their freshly detailed vehicle. That moment when they realize just how great their car can look—that's what it's all about for us.</p>
+            <p class="owner-name">— Karwan G., Owner</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-header">
+            <h2>What Lincoln Drivers Say About Us</h2>
+            <p>Don't just take our word for it—hear from our satisfied customers</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"I've been taking my cars to Golden Auto Detailing for a couple years now and they never disappoint. The customer service is exceptional and they really go above and beyond. My car always looks brand new when they're done!"</p>
+                <p class="reviewer-name">Michael R.</p>
+                <p class="review-source">Google Review</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Wow! I thought my interior was beyond saving after my kids and pets had their way with it. Golden Auto Detailing completely transformed it. You'd never know it's the same car. Absolutely worth every penny."</p>
+                <p class="reviewer-name">Jennifer T.</p>
+                <p class="review-source">Google Review</p>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Very professional and reliable. They took great care of my vehicle and the attention to detail was impressive. Fair pricing and excellent results. I'll definitely be coming back and recommending them to friends."</p>
+                <p class="reviewer-name">David L.</p>
+                <p class="review-source">Google Review</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="section-header">
+            <h2>How It Works</h2>
+            <p>Getting your car detailed is simple and straightforward</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Contact Us</h3>
+                <p>Give us a call or fill out our contact form to request a quote. We'll discuss your needs and schedule a convenient time.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>We Assess Your Needs</h3>
+                <p>We'll talk about what your car needs and recommend the best services to get the results you're looking for.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Professional Service</h3>
+                <p>We detail your vehicle with meticulous care, using quality products and proven techniques that deliver outstanding results.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Enjoy Your Clean Car</h3>
+                <p>Drive away with a vehicle that looks amazing. You'll love the way your car feels, smells, and shines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>Do you offer free estimates?</h3>
+                <p>Yes! Give us a call at (402) 875-1369 and we'll provide a free estimate based on your vehicle's condition and the services you're interested in.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What areas do you serve?</h3>
+                <p>We're located in Lincoln, Nebraska and serve the entire Lincoln area. Visit us at 122 S Antelope Valley Pkwy, Lincoln, NE 68510.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long does detailing take?</h3>
+                <p>It depends on the service. A basic wash and wax might take a couple hours, while a full interior and exterior detail can take 4-6 hours. We'll give you a time estimate when you book.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept cash, all major credit cards, and debit cards for your convenience.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you come to my location?</h3>
+                <p>We operate from our Lincoln location where we have all our equipment and supplies. You can drop off your vehicle or wait while we work if you prefer.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How often should I detail my car?</h3>
+                <p>For best results, we recommend a full detail every 3-6 months depending on how you use your vehicle. Regular maintenance keeps your car looking great and protects your investment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Ready to Make Your Car Look New Again?</h2>
+            <p>Get in touch today and let's bring out the best in your vehicle</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle">Vehicle Type</label>
+                        <input type="text" id="vehicle" name="vehicle" placeholder="e.g., 2020 Honda Accord">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell Us What You Need</label>
+                        <textarea id="message" name="message" placeholder="What services are you interested in?"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>📍 Location</h3>
+                    <p>122 S Antelope Valley Pkwy<br>Lincoln, NE 68510</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:4028751369">(402) 875-1369</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:goldenautodetailing2@gmail.com">goldenautodetailing2@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>🕒 Hours</h3>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 4:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+                <div class="info-item">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8!2d-96.7077!3d40.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8796be6e5e8e8e8e%3A0x1234567890123456!2s122%20S%20Antelope%20Valley%20Pkwy%2C%20Lincoln%2C%20NE%2068510!5e0!3m2!1sen!2sus!4v1234567890123" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Golden Auto Detailing</h3>
+                <p>Lincoln's trusted choice for professional auto detailing services. Family-owned and operated.</p>
+                <p style="margin-top: 1rem;">⭐ 4.8 Rating | 189+ Reviews</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#about">About</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>122 S Antelope Valley Pkwy<br>Lincoln, NE 68510</p>
+                <p><a href="tel:4028751369">(402) 875-1369</a></p>
+                <p><a href="mailto:goldenautodetailing2@gmail.com">goldenautodetailing2@gmail.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#services">Interior Detailing</a>
+                <a href="#services">Exterior Detailing</a>
+                <a href="#services">Paint Correction</a>
+                <a href="#services">Ceramic Coating</a>
+                <a href="#services">Headlight Restoration</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Golden Auto Detailing. All rights reserved. | Proudly serving Lincoln, Nebraska</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelector('nav').classList.remove('active');
+            });
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We\'ll contact you shortly. For immediate assistance, please call (402) 875-1369.');
+            this.reset();
+        });
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
